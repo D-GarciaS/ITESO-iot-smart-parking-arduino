@@ -13,7 +13,7 @@ void initSensors()
     int i = 0;
     for (int spin : sensorPin)
     {
-        pinMode(spin, INPUT_PULLUP);
+        pinMode(spin, INPUT);
         sensors[i] = SlotSensor(i, spin);
         i++;
     }
@@ -74,6 +74,8 @@ void setup()
 {
     Serial.begin(9600);
     initSensors();
+    pinMode(26, OUTPUT);
+    digitalWrite(26, LOW);
 }
 
 void loop()

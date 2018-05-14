@@ -5,10 +5,7 @@ const int sensorPin[] = {
     23,
     24,
     25,
-    26,
-    27,
-    28,
-    29,
+    
 };
 
 const int NUMBER_OF_SENSORS = sizeof(sensorPin) / sizeof(int);
